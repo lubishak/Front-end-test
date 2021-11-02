@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        section{
+    max-width: 600px;
+    display: grid;
+    border: 1px solid green;
+    gap: 20px;
+    grid-template-columns: repeat(6,1fr);
+    grid-template-rows: repeat(3,100px);
+    grid-template-rows: "card1 card2 card3 card4 sidebar sidebar"
+                         " main main main main main ";
+}
+div{
+    border: 1px solid red;
+}
+main{
+    border: 1px solid green;
+    /* grid-column: 1/5; */
+    /* grid-column: 1/ span 4;
+    grid-row: 2/4; */
+}
+nav{
+ border:   1px solid orange;
+ /* grid-column:5/7;
+ grid-row: 1/-1; */
+}
+</style>
+</head>
+<body>
+    <section>
+        <div>card 1</div>
+        <div>card 2</div>
+        <div>card 3</div>
+        <div> card 4</div>
+
+        <main> main contento</main>
+        <nav> my sidebar</nav>
+    </section>
+    
+</body>
+</html>

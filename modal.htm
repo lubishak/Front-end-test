@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        #modaltoog{
+            display: none;
+        }
+       #modaltoog:target{
+          display: flex;
+       }
+
+       .modal_container{
+           position: fixed;
+           inset: 0 0 0 0;
+           background-color: rgba(0, 0, 0, .3);
+           display: flex;
+           justify-content: center;
+           align-items: center;
+       }
+       .modal_content{
+           background-color: white;
+           width: 50%;
+       }
+    </style>
+</head>
+<body>
+  <a href="#modaltoog">open modal</a>
+  <div class="modal_container" id='modaltoog'>
+      <div class="modal_content">
+          <p>
+              hi there
+          </p>
+          <a href="#"> close modal</a>
+      </div>
+  </div>
+</body>
+</html>

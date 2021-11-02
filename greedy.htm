@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+                section{
+            max-width: 600px;
+            display: grid;
+            border: 1px solid green;
+            gap: 20px;
+            grid-template-columns: 1fr 2fr 1fr;
+            grid-template-rows: 100px 200px;
+           
+        }
+        div{
+            border: 1px solid red;
+        }
+        .sidebar{
+            grid-row: 1/-1;
+            grid-column: 3/4;
+        }
+        .one{
+            grid-column: 1/3;
+        }
+    </style>
+</head>
+<body>
+     <section>
+         <div class="one">
+             1
+         </div>
+         <div>
+             2
+         </div>
+         <div class="sidebar">
+             3
+         </div>
+         <div>
+             4
+         </div>
+         <div>
+             5
+         </div>
+         <div>
+             4
+         </div>
+         <div>
+             5
+         </div>
+     </section>
+</body>
+</html>

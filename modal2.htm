@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .btn{
+            padding: 20px;
+            background-color: teal;
+            color: white;
+        }
+       .modal_container{
+           position: fixed;
+           inset: 0 0 0 0;
+           background-color: rgba(0, 0, 0, .3);
+           display: none;
+           justify-content: center;
+           align-items: center;
+       }
+      .yama{
+          display: none;
+      }
+       .yama:checked ~ .modal_container{
+           display: flex;
+       }
+    </style>
+</head>
+<body>
+    <input class="yama" type="checkbox"  id="checkyy">
+    <label for="checkyy" class="btn">open modal</label>
+    <div class="modal_container" id='modaltoog'>
+        <div class="modal_content">
+            <p>
+                hi there
+            </p>
+           <label for="checkyy" class="btn"> close modal</label>
+        </div>
+    </div>
+</body>
+</html>
